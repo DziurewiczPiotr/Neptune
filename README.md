@@ -17,7 +17,9 @@ ssh -p {port_number} {remote_host}
 - `podman run -d -p 8080:80 neptune_nginx`
 - `podman attach --latest`
 - `podman exec -it --latest bash`
+- `podman run -d -p 4200:4200 --network=host neptune_prefect_server`
+
 
 ## Danger Zone
 
-- `docker system prune -a`
+- `podman system prune -a`
